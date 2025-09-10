@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Portfolio</title>
+</head>
+<body>
+   <style>
+     .nav {
+    backdrop-filter: blur(30px)
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    width: 100%;
+    background: none;
+    color: gold;
+    border-style: groove;
+    border-radius: 25px;
+    border-top-color: #ff2a35e2;   
+    border-left-color: #ff2a35e2;
+    border-bottom-color: #e3ff55e2;
+    border-right-color: #e3ff55e2;
+}
+body {
+   background-color: #030303;
+   color: white;
+   font-size: 25px;
+   font-family: serif;
+}
+.nav .top {
+    height: 60px;
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .top .menu-btn {
+    outline: none;
+    border-style: grooved ;
+    background: none;
+    padding: 3px 5px;
+    border: 1px solid ;
+    border-top-color: #ff2a35e2;   
+    border-left-color: #ff2a35e2;
+    border-bottom-color: #e3ff55e2;
+    border-right-color: #e3ff55e2;
+    border-radius: 5px;
+    color: gold;
+    cursor: pointer;
+    font-family: serif;
+    font-weight: bold;
+}
+.nav .list {
+    display: none;
+    transition: all .4s;
+    font-family: serif;
+}
+.nav .list li a {
+    display: block;
+    width: 100%;
+    padding: 6px 15px;
+    color: gold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .4s;
+}
+.nav ul li a:hover {
+    background-color: white;
+}
+h2 {
+   font-family: serif;
+   font-weight: bold;
+   font-size: 25px;
+   color: gold;
+}  
+h1 {
+   color: blue;
+   padding: 20px,10px;
+}
+h3.met {
+   color: #ff1515;
+   text-align: center;
+   border-size: 2px;
+   border-style: dotted;
+   border-image: url(k.jpg)
+   padding: 3px 6px;
+   border-radius: 20px;
+   font-family: monospace;
+   outline: none;
+   cursor: pointer;   
+}
+div.ryt {
+   background-image: url(yy.png)
+}
+h5.ret {
+   scroll-behaviour: smooth;
+}
+#
+h4 {
+   color: black;
+   height: 600px;
+   background-color: tomato;
+}
+img.mir {
+   border-radius: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   
+}
+#hello {
+   height: 1000px;
+   background-color: white;
+   color: blue;
+}
+html {
+   scroll-behaviour: smooth;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+}
+p.who {
+   font-family: serif;
+   color: #0;
+}
+h2.bag {
+   font-size: 25px;
+   font-weight: bolder:
+   align: center;
+   font-family: cambria;
+   color: white;   
+}
+#wen {
+   box-shadow: 2px 2px 2px 2px gold;
+   background-color: black;
+   border-radius: 15px;
+   border: 2px
+   font-size: 50px
+}
+h6 {
+   font-size: 30px;
+   color: #ee15ff
+}
+small {
+   font-size: 15px;
+   color: 
+}
+#ber {
+   box-shadow: 2px 2px 2px 2px gold;
+   background-color: black;
+   border-radius: 15px;
+   border: 2px;
+   font-size: 25x;
+   
+}
+a {
+   color: lightblue;
+}
+p.rf {
+   font-size: 15px;
+   color: #ff152a;
+}
+#bar {
+   box-shadow: 2px 2px 2px 2px gold;
+   background-color: black;
+   border-radius: 15px;
+   border: 2px;
+   font-size: 25x;
+}
+   </style>
+<nav class="nav">
+    <div class="top">
+        <h2>NBiggie</h2>
+        <button class="menu-btn" onclick="openMenu(this)">Menu</button>
+    </div>
+    <ul class="list">
+        <li><a href="#wen">About</a></li>
+        <li><a href="#ber">Contact</a></li>
+        <li><a href="www.facebook.com" alt='i love u'>Hire</a></li>
+     
+    </ul></nav>        
+    <p id="wen" align="center" font><br>About<br><small >I'm NBiggie, a skilled website developer, programmer, and cybersecurity expert passionate about crafting stunning digital experiences with clean, efficient code. As founder of CryticSec,a cybersecurity company, NBiggie brings expertise and innovation to the tech world.
+</small></p>
+<p align="center"id="ber"><br>Contact<br><small>
+ Chat me on <a href="wa.me/2347058828892">whatsapp : +2347058828892</a><br>
+ Chat me on <a href="https://www.facebook.com/profile.php?id=61576814324856">Facebook : Biggie Israel</a><br>
+ Chat me on <a href="wa.me/2347058828892">Instagram dev_israel_biggie </a><br>
+  
+</small></p>
+<p align="center" id="bar"><br>Hire<br><small>wjsj</small></p>
+<p class="rf"align="center">&copy My Portfolio 2024</p>
+<!-- Javascript code -->
+<script>
+    function openMenu(e) {
+        var menuList = document.querySelector(".nav .list");
+        if (e.innerHTML == "Menu") {
+            e.innerHTML = "Close";
+            menuList.style.display = "block";
+        } else {
+            e.innerHTML = "Menu";
+            menuList.style.display = "none";
+        }
+    0;
+}        
+</script>
+</body>
+  </html>
